@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+    ros_nightly:
+        container_name: ros_nightly
+        build: .
+        tty: true
+
+        environment:
+            - SSH_AUTH_SOCK=/tmp/ssh_auth_sock
+
+        volumes:
+            # Github and ssh config
+            - ~/.ssh:/root/.ssh # ssh key needed to push to github
+            - ~/.gitconfig:/root/.gitconfig # git config needed for user details
+            - $SSH_AUTH_SOCK:/tmp/ssh_auth_sock # needed to push to github without prompt
+            # Mount repo/workspace
+            - ./:/opt/overlay_ws
+
