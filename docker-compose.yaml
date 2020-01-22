@@ -15,5 +15,6 @@ services:
             - ~/.gitconfig:/root/.gitconfig # git config needed for user details
             - $SSH_AUTH_SOCK:/tmp/ssh_auth_sock # needed to push to github without prompt
             # Mount repo/workspace
-            - ./:/opt/overlay_ws
+            - ./:/opt/overlay_ws/src
+
 

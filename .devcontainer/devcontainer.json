@@ -15,7 +15,7 @@
 
 	// The optional 'workspaceFolder' property is the path VS Code should open by default when
 	// connected. This is typically a file mount in .devcontainer/docker-compose.yml
-	"workspaceFolder": "/opt/overlay_ws",
+	"workspaceFolder": "/opt/overlay_ws/src",
 
 	// Use 'settings' to set *default* container specific settings.json values on container create. 
 	// You can edit these settings after create using File > Preferences > Settings > Remote.
@@ -46,6 +46,7 @@
 		"kevinglasson.cornflakes-linter",
 		"eamodio.gitlens",
 		"gruntfuggly.todo-tree",
-		"littlefoxteam.vscode-python-test-adapter"
+		"littlefoxteam.vscode-python-test-adapter",
+		"twxs.cmake"
 	]
 }
