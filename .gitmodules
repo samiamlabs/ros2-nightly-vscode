@@ -1,0 +1,9 @@
+[submodule "ros/rosidl_python"]
+	path = ros/rosidl_python
+	url = https://github.com/samiamlabs/rosidl_python.git
+[submodule "ros/common_interfaces"]
+	path = ros/common_interfaces
+	url = https://github.com/ros2/common_interfaces.git
+[submodule "ros/rosidl_python_test_interfaces"]
+	path = ros/rosidl_python_test_interfaces
+	url = https://github.com/samiamlabs/rosidl_python_test_interfaces.git
